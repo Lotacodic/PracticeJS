@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Challenge #01</title>
+</head>
+<body>
+    <h2>Coding Challenge #01</h2>
+
+
+
+    <script>
+        const marksHeight = 1.69;
+        const marksWeight = 78;
+        const johnsHeight = 1.95;
+        const johnsweight = 95;
+
+        //Mark's BMI
+        marksBMI = marksWeight / (marksHeight ** 2);
+        
+
+        //John's BMI
+        johnsBMI = johnsweight / (johnsHeight ** 2);
+        
+        console.log(marksBMI, johnsBMI)
+        const markHigherBMI = () => {
+            console.log(marksBMI > johnsBMI);
+        }
+        markHigherBMI();
+    </script>
+</body>
+</html>

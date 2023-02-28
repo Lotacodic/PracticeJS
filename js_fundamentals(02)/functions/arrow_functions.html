@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <h2>Arrow Functions</h2>
+
+    <script>
+        //Arrow function(from ES6)
+        const calcAge = birthYear => 2023 - birthYear;
+        const age = calcAge(2002);
+        console.log(age);
+
+        const yearsUntilRetirement = (birthYear, firstName) => {
+            const age = 2023 - birthYear;
+            const retirement = 65 - age;
+            //return retirement;
+            return `${firstName} retires in  ${retirement}`;
+        }
+
+        console.log(yearsUntilRetirement(1998, 'Joshua'));
+    </script>
+</body>
+</html>

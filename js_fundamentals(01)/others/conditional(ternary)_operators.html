@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Conditional(ternary) Operators</title>
+</head>
+<body>
+    <h2>The Conditional(ternary) Operators</h2>
+
+    <script>
+        const age = 15;
+     //   age >= 18 ? 'wine': 'water';
+    //    console.log('I like drink');
+
+        const drink = age >= 18 ? 'wine': 'water';
+        console.log('drink');
+
+        let drink2;
+        if(age >= 18) {
+            drink2 = 'wine';
+        } else {
+            drink2 = 'water';
+        }
+        console.log(drink2)
+
+        console.log(`I like to drink ${age >= 18 ? 'wine': 'water'}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equality operators</title>
+</head>
+<body>
+    <h2>Equality operators</h2>
+
+
+
+    <script>
+        const age = 18;
+        //const age = 19;
+        //const age = '18';
+        //to check if the age is exactly 18
+        if(age === 18) console.log("You just became an adult (strict)");
+
+        if(age == 18) console.log("You just became an adult (loose)")
+
+        //Case 1
+        const favValue = prompt("What's your favorite value? ");
+        console.log(favValue, typeof(favValue));
+
+        if(favValue == 25) { // '25' == 25
+            console.log('cool! 25 is an amazing number!');
+        }
+        
+      /* 
+        Case 2
+        const favValue2 = Number(prompt("What's your favorite value? "));
+        console.log(favValue2, typeof(favValue2));
+
+        if(favValue === 25) { // '25' === 25
+            console.log('cool! 25 is an amazing number!');
+        }
+        */
+       //Not-Equal-to
+       if(favValue !== 30) console.log("Why not 30?");
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversion and Coercion</title>
+</head>
+<body>
+   <h2>Type Conversion and Coercion</h2> 
+
+
+
+   <script>
+    //Type Conversion
+    const inputYear = '1991';
+    console.log(Number(inputYear), inputYear);
+    console.log(Number(inputYear) + 18);
+
+    //Strings to Number
+    console.log(Number('Joshua'));
+    console.log(typeof(Number("Joshua")));
+
+    //Number to String
+    console.log(String(23), 23);
+
+    //Type Coercion: Happens whenver an operation is dealing with two values that have different types
+    console.log('I am ' + 23 + ' years old');
+    console.log('23' - '10' - 3); //10 Js converted the strings to number. The minus operation triggers the conversion
+    console.log('23' + '10' + 3);//23103
+    console.log('23' * '2');//46
+    console.log('24' / '2')//12
+
+
+   </script>
+</body>
+</html>

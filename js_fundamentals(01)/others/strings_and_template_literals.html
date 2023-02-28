@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings and Template Literals</title>
+</head>
+<body>
+    <h2>Strings and Template Literals</h2>
+
+
+
+    <script>
+        //String literal
+        const firstName = 'Jonas';
+        const job = 'teacher';
+        const birthYear = 1991;
+        const year = 2037
+
+        const jonas = "I'm " + firstName + ", a " + (year - birthYear) + ' years old ' + job + '!';
+        console.log(jonas)
+        //template literal
+        const jonasNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`
+        console.log(jonasNew);
+
+        //New line
+        console.log('String with\nmultiple \nlines')
+
+        console.log(`String with
+mulitple
+lines`)
+    </script>
+
+</body>
+</html>

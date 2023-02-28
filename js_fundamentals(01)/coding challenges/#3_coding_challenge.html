@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Challenge #3</title>
+</head>
+<body>
+    <h2>Coding Challenge #3</h2>
+    
+
+
+    <script>
+        //Step 1
+        const averageScoreDolphins = (96 + 108 + 109) / 3;
+        const averageScoreKoalas = (108 + 109 + 96) / 3;
+        console.log(averageScoreDolphins, averageScoreKoalas);
+        //Step 2 & 3
+        if(averageScoreDolphins > averageScoreKoalas && averageScoreDolphins >= 100 ) {
+            console.log('Dolphins wins the trophy!');
+        } else if (averageScoreKoalas > averageScoreDolphins && averageScoreKoalas >= 100) {
+            console.log('Koalas wins the trophy!');
+        } else if (averageScoreDolphins === averageScoreKoalas && averageScoreDolphins >= 100 && averageScoreKoalas >= 100 ) {
+            console.log(`Both team wins the trophy!`);
+        } else {
+            console.log('No one wins the trophy');
+        }
+        //Step 3
+
+    </script>
+</body>
+</html>

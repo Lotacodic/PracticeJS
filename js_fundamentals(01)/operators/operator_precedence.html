@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Precedence</title>
+</head>
+<body>
+
+
+
+   <script>
+    const now = 2037;
+    const ageJonas = now - 1991;
+    const ageSarah = now - 2018;
+
+
+    let message = (now - 1991 > now - 2018);
+    if (message === true) {
+        console.log("True");
+    } else {console.log("False")}
+
+    //Assignment: left-right
+    let x, y;
+    x = y = 25 - 10 - 5; //x = y = 10
+    console.log(x, y);
+    //Bracket
+    const averageAge = (ageJonas + ageSarah) / 2;
+    console.log(ageJonas, ageSarah, averageAge)
+   </script> 
+</body>
+</html>

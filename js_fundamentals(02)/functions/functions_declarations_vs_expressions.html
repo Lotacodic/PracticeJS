@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Declaration vs Expression</title>
+</head>
+<body>
+    <h2>Function Declaration vs Expression</h2>
+
+    <script>
+        //Function declarations
+        //This is a generic function: meaning that it can work for any function we give it
+        //const age1 = calcAge1(1996);
+        function calcAge1(birthYear) {
+            return 2037 - birthYear;
+        }
+        //The parameter is the placeholder in the function while the argument is the value used to fill in the placeholder
+       const age1 = calcAge1(1996);
+
+       //Function Expression: Not function is a value that can be store in variable
+       //const age2 = calcAge2(1998);
+       const calcAge2 = function (birthYear) {
+        return 2023 - birthYear;
+       }
+
+       const age2 = calcAge2(1998);
+       console.log(age1, age2);
+
+       /*
+       Function Declaration can be called before they are defined but that can't work in Func Expression
+       Uncomment line 15 and line 23 to test this
+       */
+    </script>
+</body>
+</html>

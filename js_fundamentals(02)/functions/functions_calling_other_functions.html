@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions Calling other Functions</title>
+</head>
+<body>
+    <h2>Functions Calling other Functions</h2>
+
+    <script>
+            function cutFruitPieces(fruit) {
+                return fruit*4;
+            }
+
+
+        //Generic function with parameter
+        function fruitProcessor(apples, oranges) {
+            const applePieces = cutFruitPieces(apples);
+            const orangePieces = cutFruitPieces(oranges);
+            const juice = `juice with ${applePieces} apples and ${orangePieces} oranges.`;
+            return juice;
+        }
+
+        console.log(fruitProcessor(2, 4));
+
+    </script>
+</body>
+</html>

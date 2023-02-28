@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truthy and Falsy Value</title>
+</head>
+<body>
+     <h2>Truthy and Falsy Value</h2>
+
+
+<script>
+//5 falsy value: 0, '', undefined, null, NaN
+    console.log(Boolean(0));
+    console.log(Boolean(undefined));
+    console.log(Boolean({})); //true
+    console.log(Boolean(''));
+    console.log(Boolean(null));
+    console.log(Boolean(NaN));
+
+    const money = 0;//falsy value
+    if(money) {
+        console.log("Don't spend it all :)");
+    } else {
+        console.log('You should get a job!');
+    }
+
+    //To check if a variable is defined or not
+
+    let height; //UNDEFINED(falsy value)
+    if(height) {
+        console.log('YAY! Height is defined');
+    } else {
+        console.log('height is UNDEFINED');
+    }
+
+</script>
+</body>
+</html>
