@@ -1,1 +1,1 @@
-###<strong>PRACTICEJS</strong>
+<strong>PRACTICEJS</strong>
