@@ -11,12 +11,11 @@
 
 
 const printForeCast = function(arr) {
+    let str = "";
     for(let i = 0; i < arr.length; i++) {
-        let emptyString = "... ";
-        emptyString += `${arr[i]} in ${[i + 1]} days ...`;
-
-        console.log(emptyString);
+        
+        str += `${arr[i]} in ${i + 1} days ... `;
     }
-}
-
-const checkForeCast = printForeCast([5, 6, 10]);
+    console.log('...' + str);
+};
+printForeCast([5, 6, 10]);
