@@ -1,4 +1,9 @@
 'use strict';
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 356cc2020ab95fcd0fa70c7110086950b2c42406
 
 //Handling click events
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
